@@ -51,11 +51,16 @@ group :development, :test do
 
 	# Use unicorn as the app server
 	gem 'unicorn'
-	
+
+	gem 'backbars'
+
 	# Use Capistrano for deployment
 	# gem 'capistrano-rails', group: :development
 
 	# Use debugger
 	# gem 'debugger', group: [:development, :test]
 end
+	
 
+gem 'rails-assets-underscore', source: 'https://rails-assets.org'
+gem 'rails-assets-backbone', source: 'https://rails-assets.org'
