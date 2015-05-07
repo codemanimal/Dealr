@@ -1,0 +1,1 @@
+App.Models.Deal = Backbone.Model.extend();

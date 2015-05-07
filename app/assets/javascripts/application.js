@@ -29,3 +29,9 @@ var App = {
 	Views: {}, 
 	Routers: {}
 };
+
+$(function() {
+	console.log('loaded bro')
+	var collection = new App.Collections.Deals;
+	var dealsView = new App.Views.Deals({ collection: collection });
+});
