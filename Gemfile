@@ -53,6 +53,7 @@ group :development, :test do
 	gem 'unicorn'
 
 	gem 'backbars'
+	gem 'httparty'
 
 	# Use Capistrano for deployment
 	# gem 'capistrano-rails', group: :development
