@@ -31,7 +31,7 @@ var App = {
 };
 
 $(function() {
-	console.log('loaded bro')
-	var collection = new App.Collections.Deals;
-	var dealsView = new App.Views.Deals({ collection: collection });
+	console.log('loaded bro');
+	$('#login').append($('#sign-up-modal').html());
+	var loginModalView = new App.Views.LoginModalView();
 });

@@ -1,1 +1,1 @@
-App.Models.Deal = Backbone.Model.extend();
+// App.Models.Deal = Backbone.Model.extend();
