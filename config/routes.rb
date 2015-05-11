@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show, :new, :update, :create, :destroy]
   resources :deals, only: [:index, :show]
+
+  get 'sessions/new' => 'sessions#new'
+  post 'sessions' => 'sessions#create'
+  delete 'sessions' => 'sessions#destroy'
 end
