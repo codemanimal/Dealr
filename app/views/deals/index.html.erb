@@ -1,0 +1,10 @@
+<div id='main-view'>
+	<div id='deal-container'>
+		<% @deals.each do |deal| %>
+			<img id='deal-pic' src="<%= deal.deal_image_small %>">
+			<span><%= deal.biz_name %></span>
+			<span><%= deal.deal_price %></span>
+			<p><%= deal.deal_desc %></p>
+		<% end %>		
+	</div>
+</div>

@@ -9,24 +9,21 @@
 </head>
 <body>
 
-	<div id='login-container'>
-		<h2 id='logo'>DEALR</h2>
-		<div id='main-view'></div>
-	</div>
+	<h2 id='logo'>DEALR</h2>
 
-	<template id='sign-up-modal'>
-		<h2 class='tagline'>DEALS MADE EASY</h2>
+	<!-- <template id='sign-up-modal'> -->
+		<!-- <h2 class='tagline'>DEALS MADE EASY</h2>
 		<p>Sign up to shop.</p>
 		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
-		<button id='signup-button' class='submit-button' type='submit'>CONTINUE</button>
+		<button id='signup-button' class='submit-button' type='submit'><%= link_to 'CONTINUE', new_user_path %></button>
 		<p id='terms-of-use'>By signing up, you agree to Dealr's Terms of Use</p>
 		
 		<div class='footer' id='sign-up-footer'>
 			<span>Already a member?</span>
 			<span class='sign-in-link'>Sign in</span>
 			<span class='wingdings'>4</span>
-		</div>		
-	</template>
+		</div>		 -->
+	<!-- </template> -->
 
 	<template id='login-modal'>
 		<h2 class='tagline'>ALREADY A MEMBER?</h2>
@@ -42,21 +39,22 @@
 		</div>
 	</template>
 
-	<template id='sign-up-form'>
-		<h2 class='tagline'>ALMOST THERE.</h2>
+	<!-- <template id='sign-up-form'> -->
+		<!-- moving this to rails-->
+<!-- 		<h2 class='tagline'>ALMOST THERE.</h2>
 		<p>Just a little more info.</p>
 		<input class='user-signup' name ='first-name' autocomplete='on' type="text" placeholder="Enter first name" required>
 		<input class='user-signup' name ='last-name' autocomplete='on' type="text" placeholder="Enter last name" required>
 		<input class='user-signup' name ='zipcode' autocomplete='on' type="text" placeholder="Enter zipcode" required>
 		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
-		<button id='start-shopping-button' class='submit-button' type='submit'>START SHOPPING</button>
-		
+		<button id='start-shopping-button' class='submit-button' type='submit'>START SHOPPING</button> -->
+<!-- 		
 		<div class='footer' id='sign-up-footer'>
 			<span>Already a member?</span>
 			<span class='sign-in-link'>Sign in</span>
 			<span class='wingdings'>4</span>
-		</div>		
-	</template>
+		</div>		 -->
+	<!-- </template> -->
 
 	<template id='main-view-footer'>
 		<div class='footer'>
@@ -92,7 +90,7 @@
 		<h1>Deal Saved!</h1>
 	</template>
 
-	<!-- <%= yield %> -->
+	<%= yield %>
 
 
 </body>

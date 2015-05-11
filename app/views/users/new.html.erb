@@ -1,0 +1,40 @@
+<div id='main-view'>
+	
+	<h2 class='tagline'>ALMOST THERE.</h2>
+	<p>Just a little more info.</p>
+	<%= form_for @user do |f| %>
+	
+<!-- 		<input class='user-signup' name ='first-name' autocomplete='on' type="text" placeholder="Enter first name" required>
+		<input class='user-signup' name ='last-name' autocomplete='on' type="text" placeholder="Enter last name" required>
+		<input class='user-signup' name ='zipcode' autocomplete='on' type="text" placeholder="Enter zipcode" required>
+		<input class='user-signup' name ='username' autocomplete='on' type="text" placeholder="Enter username" required>
+		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
+		<button id='start-shopping-button' class='submit-button' type='submit'>START SHOPPING</button> -->
+
+		<%= f.text_field :first_name %>
+		<br>
+
+		<%= f.text_field :last_name %>
+		<br>
+
+		<%= f.text_field :zipcode %>
+		<br>
+
+		<%= f.text_field :username %>
+		<br>
+
+		<%= f.password_field :password %>
+		<br>
+
+		<%= f.submit %>
+
+	<% end %>
+	
+	<div class='footer' id='sign-up-footer'>
+		<span>Already a member?</span>
+		<span class='sign-in-link'>Sign in</span>
+		<span class='wingdings'>4</span>
+	</div>		
+
+
+</div>

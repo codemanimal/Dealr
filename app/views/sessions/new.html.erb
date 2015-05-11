@@ -1,0 +1,24 @@
+<div id='main-view'>
+		<h2 class='tagline'>ALREADY A MEMBER?</h2>
+		<h2 class='tagline'>SIGN IN.</h2>
+	
+	<%= form_tag '/sessions' do %>
+<!-- 		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
+		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
+		<button id='sign-in-button' class='submit-button' type='submit'>SIGN IN</button> -->
+	  <%= label_tag :username %><br>
+	  <%= text_field_tag :username %><br>
+	  <br>
+	  <%= label_tag :password %><br>
+	  <%= password_field_tag :password %><br>
+	  <br>
+	  <%= submit_tag 'Log In' %>
+	<% end %>
+	
+	<div class='footer' id='login-footer'>
+		<span>NOT A MEMBER?</span>
+		<span class='sign-in-link'>Sign up now</span>
+		<span class='wingdings'>4</span>
+	</div>
+
+</div>

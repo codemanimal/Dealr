@@ -26,7 +26,20 @@
   padding-bottom: 12px;
 }
 
+#main-view {
+  display: block;
+  text-align: center;
+  background: white;
+  color: black;
+  width: 620px;
+  height: 306px;
+  margin: 0 auto;
+  font-family: 'Porto', 'Arial', sans-serif;
+  padding-bottom: 12px;
+}
+
 #logo {
+	text-align: center;
 	font-family: 'Lombok', 'Arial', sans-serif;
 	font-size: 250%;
 	margin-top: 30px;
@@ -34,6 +47,7 @@
 }
 
 .tagline {
+	text-align: center;
 	font-family: 'Porto', 'Arial', sans-serif;
 	font-size: 250%;
 	margin-top: 15px;

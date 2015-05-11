@@ -1,7 +1,7 @@
 App.Views.DealView = Backbone.View.extend({
 	initialize: function () {
 		console.log('new deal view bro');
-		// $('body').html('');
+		// debugger;
 		this.template = HandlebarsTemplates['deal'];
 		$('#main-view').html($('#deal-view').html());
 		this.render();
@@ -31,7 +31,6 @@ App.Views.DealView = Backbone.View.extend({
 		$('#main-view').empty();
 		$('.footer').remove();
 		var loginView = new App.Views.LoginModalView();
-		// debugger;
 		loginView.renderModal();
 	}
 
