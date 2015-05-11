@@ -13,3 +13,297 @@
  *= require_tree .
  *= require_self
  */
+
+#login-container {
+  display: block;
+  text-align: center;
+  background: white;
+  color: black;
+  width: 620px;
+  height: 306px;
+  margin: 0 auto;
+  font-family: 'Porto', 'Arial', sans-serif;
+  padding-bottom: 12px;
+}
+
+#logo {
+	font-family: 'Lombok', 'Arial', sans-serif;
+	font-size: 250%;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+.tagline {
+	font-family: 'Porto', 'Arial', sans-serif;
+	font-size: 250%;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.user-signup {
+	border-radius: 5px;
+	padding: 8px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	clear: both;
+	color: #666666;
+	box-shadow: none;
+	border: 1px solid #cccccc;
+	line-height: normal;
+	vertical-align: middle;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-align: start;
+	display: inline-block;
+	width: 602px;
+}
+
+.submit-button {
+	width: 100%;
+	height: 42px;
+	padding: 8px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00E0AC;
+	background-color: #00E0AC;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.signup-button:hover {
+	width: 100%;
+	height: 42px;
+	padding: 8px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00FFCB;
+	background-color: #00FFCB;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#terms-of-use {
+	font-size: 8px;
+}
+
+.footer {
+	position: relative;
+	background: black;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 720px;
+	height: 25px;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+	font-family: 'Slim Joe', 'Arial', sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	border: 50px black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	cursor: pointer;
+}
+
+.sign-in-link {
+	font-family: 'Big John'
+}
+
+.wingdings {
+	font-family: 'Wingdings 3';
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.deal-preview {
+	padding: 12px;
+  padding-top: 26px;
+  text-align: left;
+  left: 176px;
+  top: 296px;
+  position: fixed;
+  height: 48px;
+  width: 676px;
+  left: 10px;
+  background: white;
+  line-height: 12px;
+}
+
+.footer-button{
+	margin: 83px;
+}
+
+#deal-container {
+	background-color: #FFEFE9;
+  height: 500px;
+  width: 1440px;
+  left: 0px;
+  top: 79px;
+  position: absolute;
+}
+
+#deal-pic {
+	height: 197px;
+	width: 700px;
+	position: fixed;
+	left: 10px;
+	top: 109px;
+}
+
+#about-container {
+	border: black;
+  border-style: groove;
+  border-radius: 20px;
+  position: absolute;
+  left: 205px;
+  width: 1000px;
+  top: 90px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Pier Sans', 'Arial',  sans-serif;
+}
+
+#about-container h1, h2 {
+  font-family: 'Lombok', 'Arial', sans-serif;
+}
+
+#back-to-deals {
+	width: 33%;
+	height: 42px;
+	padding: 8px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00E0AC;
+	background-color: #00E0AC;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#deal-description {
+	position: fixed;
+  left: 320px;
+  text-align: center;
+  top: 135px;
+  border: white;
+  border-style: solid;
+  padding: 20px;
+  width: 335px;
+  height: 200px;
+  background-color: white;
+}
+
+#deal-description-image {
+  position: fixed;
+  width: 500px;
+  height: 246px;
+  top: 135px;
+  left: 686px;
+}
+
+.deal-buttons {
+  position: fixed;
+  bottom: 151px;
+  left: 320px;
+  width: 867px;
+  height: 54px;
+  background: white;
+  line-height: 56px;
+}
+
+#save-deal-button {
+	border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 75px;
+  width: 250px;
+  background-color: #383636;
+  color: white;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	box-shadow: none;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#save-deal-button:hover {
+	border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 75px;
+  width: 250px;
+  background-color: black;
+  color: white;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	box-shadow: none;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#buy-deal-button {
+	border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 75px;
+  width: 250px;
+  background-color: #383636;
+  color: white;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	box-shadow: none;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#buy-deal-button:hover {
+	border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 75px;
+  width: 250px;
+  background-color: black;
+  color: white;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	box-shadow: none;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#deal-price {
+	position: fixed;
+  right: 255px;
+  top: 119px;
+  background: black;
+  color: white;
+  height: 46px;
+  line-height: 47px;
+  padding: 10px;
+  opacity: .5;
+}

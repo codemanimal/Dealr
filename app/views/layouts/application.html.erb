@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DealrApp</title>
+  <title>Dealr</title>
+  <!-- <link rel="stylesheet" href="animate.min.css"> -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<div id='login-container'>
+		<h2 id='logo'>DEALR</h2>
+		<div id='main-view'></div>
+	</div>
+
+	<template id='sign-up-modal'>
+		<h2 class='tagline'>DEALS MADE EASY</h2>
+		<p>Sign up to shop.</p>
+		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
+		<button id='signup-button' class='submit-button' type='submit'>CONTINUE</button>
+		<p id='terms-of-use'>By signing up, you agree to Dealr's Terms of Use</p>
+		
+		<div class='footer' id='sign-up-footer'>
+			<span>Already a member?</span>
+			<span class='sign-in-link'>Sign in</span>
+			<span class='wingdings'>4</span>
+		</div>		
+	</template>
+
+	<template id='login-modal'>
+		<h2 class='tagline'>ALREADY A MEMBER?</h2>
+		<h2 class='tagline'>SIGN IN.</h2>
+		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
+		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
+		<button id='sign-in-button' class='submit-button' type='submit'>SIGN IN</button>
+		
+		<div class='footer' id='login-footer'>
+			<span>NOT A MEMBER?</span>
+			<span class='sign-in-link'>Sign up now</span>
+			<span class='wingdings'>4</span>
+		</div>
+	</template>
+
+	<template id='sign-up-form'>
+		<h2 class='tagline'>ALMOST THERE.</h2>
+		<p>Just a little more info.</p>
+		<input class='user-signup' name ='first-name' autocomplete='on' type="text" placeholder="Enter first name" required>
+		<input class='user-signup' name ='last-name' autocomplete='on' type="text" placeholder="Enter last name" required>
+		<input class='user-signup' name ='zipcode' autocomplete='on' type="text" placeholder="Enter zipcode" required>
+		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
+		<button id='start-shopping-button' class='submit-button' type='submit'>START SHOPPING</button>
+		
+		<div class='footer' id='sign-up-footer'>
+			<span>Already a member?</span>
+			<span class='sign-in-link'>Sign in</span>
+			<span class='wingdings'>4</span>
+		</div>		
+	</template>
+
+	<template id='main-view-footer'>
+		<div class='footer'>
+			<span id='about' class='footer-button'>About</span>
+			<span id='blog' class='footer-button'>
+				<a href="http://www.google.com">Blog</a>
+			</span>
+			<span id='logout' class='footer-button'>Logout</span>
+		</div>
+	</template>
+
+	<template id='deal-view'>
+		<div id='deal-container'></div>
+	</template>
+
+	<template id='about-template'>
+		<div id='about-container'>
+			<h1>ABOUT</h1>
+			<hr>
+			<p>THE BEST LOCAL DEALS EVERYDAY. Dealr is your destination for the best discounts and offers in your local area. Each day, we curate deals with the best of the best in women's and men's fashion, home, travel, kids, and more. New deals are posted at 11AM ET and last for 24 hours.</p>
+			<p>Dealr is headquartered in NYC with an expansive presence in L.A.</p>
+			<h2>NEED TO GET IN TOUCH?</h2>
+			<p>Our concierge team is ready to help with any issue you encounter along the way to getting the deals you want. Feel free to reach out to us via email, or chat with us on Twitter or Facebook.</p>
+			<p>General inquiries: info@dealr.com</p>
+			<p>Media inquiries: pr@dealr.com</p>
+			<p>Twitter: @dealr</p>
+			<p>Facebook: www.facebook.com/dealrapp</p>
+			<button id='back-to-deals'>Back to deals</button>			
+		</div>
+	</template>
+
+	<template id='deal-saved-modal'>
+		<h1>Deal Saved!</h1>
+	</template>
+
+	<!-- <%= yield %> -->
+
 
 </body>
 </html>

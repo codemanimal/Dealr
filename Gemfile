@@ -41,5 +41,27 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
+  
+  gem 'pry-rails'
+  
+  gem	'awesome_print'
 
+  # Use ActiveModel has_secure_password
+	gem 'bcrypt', '~> 3.1.7'
+
+	# Use unicorn as the app server
+	gem 'unicorn'
+
+	gem 'backbars'
+	gem 'httparty'
+
+	# Use Capistrano for deployment
+	# gem 'capistrano-rails', group: :development
+
+	# Use debugger
+	# gem 'debugger', group: [:development, :test]
+end
+	
+
+gem 'rails-assets-underscore', source: 'https://rails-assets.org'
+gem 'rails-assets-backbone', source: 'https://rails-assets.org'
