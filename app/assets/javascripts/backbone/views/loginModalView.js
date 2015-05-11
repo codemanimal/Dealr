@@ -1,28 +1,36 @@
 App.Views.LoginModalView = Backbone.View.extend({
-	el: '#login',
+	el: '#main-view',
 
 	initialize: function() {
 		console.log('login modal created bro');
-		$('#login').on('click', '#sign-up-footer', this.renderModal);
+		$('#main-view').on('click', '#sign-up-footer', this.renderModal);
 	},
 
 	renderModal: function() {
-		$('#login').empty();
-		$('#login').append($('#login-modal').html());
+		$('#main-view').empty();
+		$('#main-view').append($('#login-modal').html());
 	},
 	events: {
 		'click #login-footer': 'showSignUp',
-		'click .signup-button': 'nextForm'
+		'click #signup-button': 'nextForm',
+		'click #sign-in-button': 'showDeals',
+		'click #start-shopping-button': 'showDeals'
+
 	},
 
 	showSignUp: function() {
-		$('#login').empty();
-		$('#login').append($('#sign-up-modal').html());
+		$('#main-view').empty();
+		$('#main-view').append($('#sign-up-modal').html());
 	},
 
 	nextForm: function() {
-		$('#login').empty();
-		$('#login').append($('#sign-up-form').html());
+		$('#main-view').empty();
+		$('#main-view').append($('#sign-up-form').html());
+	},
+
+	showDeals: function() {
+		$('#main-view').empty();
+		new App.Views.DealView();
 	}
 
 })

@@ -32,6 +32,7 @@ var App = {
 
 $(function() {
 	console.log('loaded bro');
-	$('#login').append($('#sign-up-modal').html());
+	$('#main-view').append($('#sign-up-modal').html());
 	var loginModalView = new App.Views.LoginModalView();
+	// new App.Views.AboutView();
 });
