@@ -1,16 +1,12 @@
-class DealsController < ApplicationController
-	# what is this doing?
-	def home
-		render layout: 'application', text: ''
-	end
+# class DealsController < ApplicationController
+# 	def index
+# 		# what does this do?
+# 		# render layout: 'application', text: ''
+# 		@deals = Deal.all
+# 	end
 
-	def all
-		result = CouponWrapper.all
+# 	def show
+# 		@deal = Deal.find(params[:id])
+# 	end
 
-		# this will render json, i think
-		# but I want to .create each result to my db
-		render json: result
-	end
-
-
-end
+# end

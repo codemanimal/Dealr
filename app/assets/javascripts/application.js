@@ -34,5 +34,4 @@ $(function() {
 	console.log('loaded bro');
 	$('#main-view').append($('#sign-up-modal').html());
 	var loginModalView = new App.Views.LoginModalView();
-	// new App.Views.AboutView();
 });

@@ -6,6 +6,7 @@ App.Views.DealView = Backbone.View.extend({
 		$('#main-view').html($('#deal-view').html());
 		this.render();
 		$('#about').on('click', this.showAbout);
+		$('#logout').on('click', this.logout)
 		this.$el.on('click', this.showDetail);
 	},
 	render: function() {
@@ -23,6 +24,15 @@ App.Views.DealView = Backbone.View.extend({
 
 	showDetail: function() {
 		new App.Views.DealDetail();
+	},
+
+	logout: function() {
+		console.log('button clicked');
+		$('#main-view').empty();
+		$('.footer').remove();
+		var loginView = new App.Views.LoginModalView();
+		// debugger;
+		loginView.renderModal();
 	}
 
 });
