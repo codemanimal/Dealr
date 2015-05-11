@@ -11,21 +11,7 @@
 
 	<h2 id='logo'><%= link_to 'DEALR', root_path %></h2>
 
-	<template id='main-view-footer'>
-		<div class='footer'>
-			<span id='about' class='footer-button'>About</span>
-			<span id='blog' class='footer-button'>
-				<a href="http://www.google.com">Blog</a>
-			</span>
-			<span id='logout' class='footer-button'>    <%= link_to 'Logout', sessions_path, method: :delete %></span>
-		</div>
-	</template>
-
-	<template id='deal-view'>
-		<div id='deal-container'></div>
-	</template>
-
-	<template id='about-template'>
+<!-- 	<template id='about-template'>
 		<div id='about-container'>
 			<h1>ABOUT</h1>
 			<hr>
@@ -43,7 +29,7 @@
 
 	<template id='deal-saved-modal'>
 		<h1>Deal Saved!</h1>
-	</template>
+	</template> -->
 
 	<%= yield %>
 

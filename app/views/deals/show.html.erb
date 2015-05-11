@@ -1,0 +1,29 @@
+	<div id='main-view'>
+		<span id='deal-description'>
+			<h3><%= @deal.biz_name %></h3>
+			<p><%= @deal.deal_desc %></p>
+		</span>
+		<span>
+			<img id='deal-description-image' src="<%= @deal.deal_image %>">
+		</span>
+		<p id='deal-price'><%= @deal.deal_price + '(' + @deal.savings_percent + '%)' %></p>
+
+		<span class='deal-buttons'>
+			<button id='save-deal-button'>Save</button>
+			<button id='buy-deal-button'>
+				<a href='<%= @deal.deal_url %>'>Buy</a>
+			</button>
+			<button id='back-to-deals-button'>
+				<%= link_to "Back", deals_path %>
+			</button>
+
+		</span>
+
+		<div class='footer'>
+			<span id='about' class='footer-button'>About</span>
+			<span id='blog' class='footer-button'>
+				<a href="http://thisisnthappiness.com/">Blog</a>
+			</span>
+			<span id='logout' class='footer-button'>    <%= link_to 'Logout', sessions_path, method: :delete %></span>
+		</div>
+	</div>

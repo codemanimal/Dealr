@@ -26,13 +26,13 @@
 		<%= f.password_field :password %>
 		<br>
 
-		<%= f.submit %>
+		<%= f.submit 'START SHOPPING' %>
 
 	<% end %>
 	
 	<div class='footer' id='sign-up-footer'>
 		<span>Already a member?</span>
-		<span class='sign-in-link'>Sign in</span>
+		<span class='sign-in-link'><%= link_to "Sign In", root_path %></span>
 		<span class='wingdings'>4</span>
 	</div>		
 

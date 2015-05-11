@@ -1,10 +1,20 @@
 <div id='main-view'>
 	<div id='deal-container'>
 		<% @deals.each do |deal| %>
-			<img id='deal-pic' src="<%= deal.deal_image_small %>">
+			<span>
+				<img id='deal-pic' src="<%= deal.deal_image_small %>">			
+			</span>
 			<span><%= deal.biz_name %></span>
-			<span><%= deal.deal_price %></span>
 			<p><%= deal.deal_desc %></p>
 		<% end %>		
 	</div>
+	
+	<div class='footer'>
+		<span id='about' class='footer-button'>About</span>
+		<span id='blog' class='footer-button'>
+			<a href="http://thisisnthappiness.com/">Blog</a>
+		</span>
+		<span id='logout' class='footer-button'>    <%= link_to 'Logout', sessions_path, method: :delete %></span>
+	</div>
 </div>
+

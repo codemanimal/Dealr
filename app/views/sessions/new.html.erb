@@ -6,18 +6,23 @@
 <!-- 		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
 		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
 		<button id='sign-in-button' class='submit-button' type='submit'>SIGN IN</button> -->
-	  <%= label_tag :username %><br>
-	  <%= text_field_tag :username %><br>
-	  <br>
-	  <%= label_tag :password %><br>
-	  <%= password_field_tag :password %><br>
-	  <br>
-	  <%= submit_tag 'Log In' %>
+	  <p class='user-signup'>
+	  	<%= text_field_tag :username %>
+	  </p>
+
+	  <p class='user-signup'>
+	  	<%= text_field_tag :password %>
+	  </p>
+	
+		<p id='sign-in-button' class='submit-button'>
+	  	<%= submit_tag 'SIGN IN' %>
+		</p>
+
 	<% end %>
 	
 	<div class='footer' id='login-footer'>
 		<span>NOT A MEMBER?</span>
-		<span class='sign-in-link'><%= link_to "Sign up now", new_user_path %></span>
+		<span class='sign-in-link'><%= link_to "Sign up now", root_path %></span>
 		<span class='wingdings'>4</span>
 	</div>
 
