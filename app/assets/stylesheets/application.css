@@ -258,6 +258,7 @@
 	padding-bottom: 15px;
 	cursor: pointer;
 	/*bottom: 22px;*/
+	z-index: 300;
 }
 
 #blog:link {
@@ -355,53 +356,60 @@
   left: 0px;
   top: 71px;
   position: relative;
-  z-index: -10;
+  /*z-index: -10;*/
   overflow: scroll;
 }
 
 .deal {
   text-align: center;
-  /* height: 240px; */
   font-family: 'Pier Sans', 'Arial', sans-serif;
   top: 50px;
   position: relative;
   margin-bottom: 40px;
-  height: 313px;
-  margin-top: -170px;
-  padding-top: 81px;
-  margin-bottom: 52px;
+  height: 280px;
+  margin-top: -81px;
+  padding-top: 58px;
+  margin-bottom: 42px;
   border-bottom-style: solid;
   border-width: 1px;
-	margin-right: 14px;
+  margin-right: 14px;
+  text-decoration: none;
+}
+
+#deal-title a {
+  position: relative;
+  top: 166px;
+  text-decoration: none;
+  z-index: 10;
+  top: 174px;
+  color: black;
 }
 
 #deal-pic {
   text-align: right;
   position: relative;
-  width: 250px;
+  width: 419px;
   top: -84px;
   height: 206px;
   z-index: -1;
-  margin-left: 14px;
+  /*margin-left: 14px;*/
+  text-decoration: none;
 }
 
-#deal-title {
+.deal-biz-name {
+	z-index: 10;
   position: relative;
-  top: 166px;
-}
-
-#deal-biz-name {
-  z-index: 10;
-  position: relative;
-  left: 595px;
-  top: 39px;
+  left: 0px;
+  top: 9px;
   background: black;
   color: white;
   height: 46px;
   line-height: 47px;
   padding: 10px;
   opacity: .75;
-  width: 230px;
+  padding-left: 35px;
+  padding-right: 32px;
+  text-decoration: none;
 }
 
 #about-container {
@@ -461,22 +469,25 @@
 }
 
 #deal-price {
-  position: fixed;
-  right: 140px;
-  top: 135px;
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+  left: 1123px;
+  top: 128px;
   background: black;
   color: white;
   height: 46px;
   line-height: 47px;
   padding: 10px;
-  opacity: .5;
+  opacity: .75;
   width: 150px;
+  font-family: 'Pier Sans', 'Arial', sans-serif;
 }
 
 .deal-buttons {
-  position: fixed;
-  bottom: 300px;
-  left: 320px;
+  position: relative;
+  top: 300px;
+  left: 327px;
   width: 867px;
   height: 54px;
   background: white;
@@ -531,6 +542,11 @@
 	vertical-align: middle;
 }
 
+#buy-deal-link {
+  text-decoration: none;
+  color: white;
+}
+
 #buy-deal-button:hover {
 	border-radius: 10px;
   padding: 10px;
@@ -561,6 +577,11 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	vertical-align: middle;
+}
+
+#back-to-deals-link {
+  text-decoration: none;
+  color: white;
 }
 
 #back-to-deals-button:hover {

@@ -1,13 +1,11 @@
-<div id='main-view'>
-	<div id='deal-container'>
-		<% @deals.each do |deal| %>
-			<div class='deal'>
-				<h4 id='deal-biz-name'><%= deal.biz_name %></h4>
-				<p id='deal-title'><%= deal.deal_title %></p>				
-				<img id='deal-pic' src="<%= deal.deal_image_small %>">			
-			</div>
-		<% end %>		
-	</div>
+<div id='deal-container'>
+	<% @deals.each do |deal| %>
+		<div class='deal'>
+			<%= link_to deal.biz_name, deal_path(deal), :class => 'deal-biz-name' %>
+			<p id='deal-title'><%= link_to deal.deal_title, deal_path(deal) %></p>
+			<img id='deal-pic' src="<%= deal.deal_image %>">			
+		</div>
+	<% end %>		
 </div>
 
 <div class='footer'>
@@ -19,3 +17,4 @@
 		<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
 	</span>
 </div>
+
