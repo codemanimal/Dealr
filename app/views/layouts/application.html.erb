@@ -6,73 +6,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/4.12/video.js"></script>
 </head>
 <body>
 
-	<div id='login-container'>
-		<h2 id='logo'>DEALR</h2>
-		<div id='main-view'></div>
-	</div>
+	<h2 id='logo'><%= link_to 'DEALR', root_path, :id => 'logo' %></h2>
 
-	<template id='sign-up-modal'>
-		<h2 class='tagline'>DEALS MADE EASY</h2>
-		<p>Sign up to shop.</p>
-		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
-		<button id='signup-button' class='submit-button' type='submit'>CONTINUE</button>
-		<p id='terms-of-use'>By signing up, you agree to Dealr's Terms of Use</p>
-		
-		<div class='footer' id='sign-up-footer'>
-			<span>Already a member?</span>
-			<span class='sign-in-link'>Sign in</span>
-			<span class='wingdings'>4</span>
-		</div>		
-	</template>
-
-	<template id='login-modal'>
-		<h2 class='tagline'>ALREADY A MEMBER?</h2>
-		<h2 class='tagline'>SIGN IN.</h2>
-		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
-		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
-		<button id='sign-in-button' class='submit-button' type='submit'>SIGN IN</button>
-		
-		<div class='footer' id='login-footer'>
-			<span>NOT A MEMBER?</span>
-			<span class='sign-in-link'>Sign up now</span>
-			<span class='wingdings'>4</span>
-		</div>
-	</template>
-
-	<template id='sign-up-form'>
-		<h2 class='tagline'>ALMOST THERE.</h2>
-		<p>Just a little more info.</p>
-		<input class='user-signup' name ='first-name' autocomplete='on' type="text" placeholder="Enter first name" required>
-		<input class='user-signup' name ='last-name' autocomplete='on' type="text" placeholder="Enter last name" required>
-		<input class='user-signup' name ='zipcode' autocomplete='on' type="text" placeholder="Enter zipcode" required>
-		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
-		<button id='start-shopping-button' class='submit-button' type='submit'>START SHOPPING</button>
-		
-		<div class='footer' id='sign-up-footer'>
-			<span>Already a member?</span>
-			<span class='sign-in-link'>Sign in</span>
-			<span class='wingdings'>4</span>
-		</div>		
-	</template>
-
-	<template id='main-view-footer'>
-		<div class='footer'>
-			<span id='about' class='footer-button'>About</span>
-			<span id='blog' class='footer-button'>
-				<a href="http://www.google.com">Blog</a>
-			</span>
-			<span id='logout' class='footer-button'>Logout</span>
-		</div>
-	</template>
-
-	<template id='deal-view'>
-		<div id='deal-container'></div>
-	</template>
-
-	<template id='about-template'>
+<!-- 	<template id='about-template'>
 		<div id='about-container'>
 			<h1>ABOUT</h1>
 			<hr>
@@ -90,9 +31,9 @@
 
 	<template id='deal-saved-modal'>
 		<h1>Deal Saved!</h1>
-	</template>
+	</template> -->
 
-	<!-- <%= yield %> -->
+	<%= yield %>
 
 
 </body>

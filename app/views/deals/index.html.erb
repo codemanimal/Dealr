@@ -1,0 +1,20 @@
+<div id='deal-container'>
+	<% @deals.each do |deal| %>
+		<div class='deal'>
+			<%= link_to deal.biz_name, deal_path(deal), :class => 'deal-biz-name' %>
+			<p id='deal-title'><%= link_to deal.deal_title, deal_path(deal) %></p>
+			<img id='deal-pic' src="<%= deal.deal_image %>">			
+		</div>
+	<% end %>		
+</div>
+
+<div class='footer'>
+	<span id='about' class='footer-button'>About</span>
+	<span class='footer-button'>
+		<a id='blog' href="http://thisisnthappiness.com/">Blog</a>
+	</span>
+	<span class='footer-button'>
+		<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
+	</span>
+</div>
+

@@ -12,7 +12,7 @@ App.Views.LoginModalView = Backbone.View.extend({
 	},
 	events: {
 		'click #login-footer': 'showSignUp',
-		'click #signup-button': 'nextForm',
+		// 'click #signup-button': 'nextForm',
 		'click #sign-in-button': 'showDeals',
 		'click #start-shopping-button': 'showDeals'
 
@@ -23,14 +23,17 @@ App.Views.LoginModalView = Backbone.View.extend({
 		$('#main-view').append($('#sign-up-modal').html());
 	},
 
-	nextForm: function() {
-		$('#main-view').empty();
-		$('#main-view').append($('#sign-up-form').html());
-	},
+	// nextForm: function() {
+	// 	$('#main-view').empty();
+	// 	$('#main-view').append($('#sign-up-form').html());
+	// },
 
 	showDeals: function() {
+		// debugger;
 		$('#main-view').empty();
-		new App.Views.DealView();
+		// var dealCollection = new App.Collections.Deals
+		var dealView = new App.Views.DealView({ collection: new App.Collections.Deals });
+		// debugger;
 	}
 
 })

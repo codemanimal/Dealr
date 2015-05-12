@@ -26,25 +26,67 @@
   padding-bottom: 12px;
 }
 
+#main-view{
+  display: block;
+  text-align: center;
+  /*background: white;*/
+  color: black;
+  width: 100%;
+  height: 100%;
+  /*overflow: scroll;*/
+  margin: 0 auto;
+  font-family: 'Porto', 'Arial', sans-serif;
+  padding-bottom: 12px;
+}
+
 #logo {
-	font-family: 'Lombok', 'Arial', sans-serif;
-	font-size: 250%;
-	margin-top: 30px;
-	margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Lombok', 'Arial', sans-serif;
+  font-size: 179%;
+  margin-top: 45px;
+  margin-bottom: 33px;
+  text-decoration: none;
+  position: fixed;
+  background: white;
+  width: 100%;
+  left: 0px;
+  top: -45px;
+  height: 88px;
+  line-height: 107px;
+  z-index: 100;
+}
+
+#logo:visited {
+	text-decoration: none;
+	color: black;
 }
 
 .tagline {
-	font-family: 'Porto', 'Arial', sans-serif;
-	font-size: 250%;
-	margin-top: 15px;
-	margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Porto', 'Arial', sans-serif;
+  font-size: 208%;
+  margin-top: 95px;
+  margin-bottom: 25px;
+}
+
+.signin-tagline {
+  text-align: center;
+  font-family: 'Porto', 'Arial', sans-serif;
+  font-size: 208%;
+  margin-bottom: 11px;
+  margin-top: -7px;
+}
+
+#welcome-back-header {
+	position: relative;
+  top: 113px;
 }
 
 .user-signup {
 	border-radius: 5px;
 	padding: 8px;
 	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
-	margin: 10px 0;
+	margin: 14px 0;
 	clear: both;
 	color: #666666;
 	box-shadow: none;
@@ -59,7 +101,7 @@
 }
 
 .submit-button {
-	width: 100%;
+	width: 87%;
 	height: 42px;
 	padding: 8px;
 	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
@@ -68,15 +110,17 @@
 	border: 1px solid #00E0AC;
 	background-color: #00E0AC;
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 	cursor: pointer;
-	letter-spacing: 3px;
+	letter-spacing: 6px;
 	text-transform: uppercase;
 	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.signup-button:hover {
-	width: 100%;
+.submit-button:hover {
+	width: 87%;
 	height: 42px;
 	padding: 8px;
 	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
@@ -85,41 +129,200 @@
 	border: 1px solid #00FFCB;
 	background-color: #00FFCB;
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 	cursor: pointer;
-	letter-spacing: 3px;
+	letter-spacing: 6px;
 	text-transform: uppercase;
 	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#signup-button {
+  width: 603px;
+  height: 30px;
+  position: relative;
+  text-decoration: none;
+  line-height: 31px;
+  padding-right: 235px;
+  padding-left: 235px;
+}
+
+#signup-button:link {
+	padding: 8px;
+  padding-right: 235px;
+  padding-left: 235px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00E0AC;
+	background-color: #00E0AC;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#signup-button:visited {
+	padding: 8px;
+	padding-right: 235px;
+  padding-left: 235px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00E0AC;
+	background-color: #00E0AC;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#signup-button:hover {
+	padding: 8px;
+	padding-right: 235px;
+  padding-left: 235px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00FFCB;
+	background-color: #00FFCB;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#signup-button:active {
+	padding: 8px;
+	padding-right: 235px;
+  padding-left: 235px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00E0AC;
+	background-color: #00E0AC;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#session-deals-link {
+  position: relative;
+  top: 137px;
+  text-decoration: none;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 #terms-of-use {
 	font-size: 8px;
+	margin-top: 15px;
 }
 
 .footer {
 	position: relative;
 	background: black;
 	text-transform: uppercase;
-	line-height: 20px;
+	line-height: 25px;
 	color: white;
-	position: absolute;
-	bottom: 0;
+	position: fixed;
+	bottom: 0px;
 	width: 720px;
 	height: 25px;
 	width: 100%;
 	text-align: center;
 	left: 0px;
 	font-family: 'Slim Joe', 'Arial', sans-serif;
-	font-weight: 100;
-	font-size: 14px;
+	font-weight: 900;
+	font-size: 18px;
 	border: 50px black;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	cursor: pointer;
+	/*bottom: 22px;*/
+	z-index: 300;
 }
 
-.sign-in-link {
-	font-family: 'Big John'
+#blog:link {
+	text-decoration: none;
+	color: white;
+}
+
+#blog:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#blog:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#blog:active {
+	text-decoration: none;
+	color: white;
+}
+
+#logout:link {
+	text-decoration: none;
+	color: white;
+}
+
+#logout:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#logout:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#logout:active {
+	text-decoration: none;
+	color: white;
+}
+
+.sign-in-link:link {
+	font-family: 'Big John';
+	text-decoration: none;
+	color: white;
+}
+
+.sign-in-link:visited {
+	font-family: 'Big John';
+	text-decoration: none;
+	color: white;
+}
+
+.sign-in-link:hover {
+	font-family: 'Big John';
+	text-decoration: none;
+	color: white;
+}
+
+.sign-in-link:active {
+	font-family: 'Big John';
+	text-decoration: none;
+	color: white;
 }
 
 .wingdings {
@@ -147,20 +350,66 @@
 }
 
 #deal-container {
-	background-color: #FFEFE9;
-  height: 500px;
+  /*background-color: #FFFFF4;*/
+  height: 100%;
   width: 1440px;
   left: 0px;
-  top: 79px;
-  position: absolute;
+  top: 71px;
+  position: relative;
+  /*z-index: -10;*/
+  overflow: scroll;
+}
+
+.deal {
+  text-align: center;
+  font-family: 'Pier Sans', 'Arial', sans-serif;
+  top: 50px;
+  position: relative;
+  margin-bottom: 40px;
+  height: 280px;
+  margin-top: -81px;
+  padding-top: 58px;
+  margin-bottom: 42px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin-right: 14px;
+  text-decoration: none;
+}
+
+#deal-title a {
+  position: relative;
+  top: 166px;
+  text-decoration: none;
+  z-index: 10;
+  top: 174px;
+  color: black;
 }
 
 #deal-pic {
-	height: 197px;
-	width: 700px;
-	position: fixed;
-	left: 10px;
-	top: 109px;
+  text-align: right;
+  position: relative;
+  width: 419px;
+  top: -84px;
+  height: 206px;
+  z-index: -1;
+  /*margin-left: 14px;*/
+  text-decoration: none;
+}
+
+.deal-biz-name {
+	z-index: 10;
+  position: relative;
+  left: 0px;
+  top: 9px;
+  background: black;
+  color: white;
+  height: 46px;
+  line-height: 47px;
+  padding: 10px;
+  opacity: .75;
+  padding-left: 35px;
+  padding-right: 32px;
+  text-decoration: none;
 }
 
 #about-container {
@@ -198,30 +447,47 @@
 }
 
 #deal-description {
-	position: fixed;
-  left: 320px;
+  font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+  position: fixed;
+  left: 92px;
   text-align: center;
-  top: 135px;
+  top: 117px;
   border: white;
   border-style: solid;
   padding: 20px;
-  width: 335px;
+  width: 586px;
   height: 200px;
   background-color: white;
 }
 
 #deal-description-image {
   position: fixed;
-  width: 500px;
+  width: 574px;
   height: 246px;
-  top: 135px;
-  left: 686px;
+  top: 150px;
+  left: 727px;
+}
+
+#deal-price {
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+  left: 1123px;
+  top: 128px;
+  background: black;
+  color: white;
+  height: 46px;
+  line-height: 47px;
+  padding: 10px;
+  opacity: .75;
+  width: 150px;
+  font-family: 'Pier Sans', 'Arial', sans-serif;
 }
 
 .deal-buttons {
-  position: fixed;
-  bottom: 151px;
-  left: 320px;
+  position: relative;
+  top: 300px;
+  left: 327px;
   width: 867px;
   height: 54px;
   background: white;
@@ -232,7 +498,6 @@
 	border-radius: 10px;
   padding: 10px;
   text-align: center;
-  margin-right: 75px;
   width: 250px;
   background-color: #383636;
   color: white;
@@ -249,7 +514,6 @@
 	border-radius: 10px;
   padding: 10px;
   text-align: center;
-  margin-right: 75px;
   width: 250px;
   background-color: black;
   color: white;
@@ -266,7 +530,6 @@
 	border-radius: 10px;
   padding: 10px;
   text-align: center;
-  margin-left: 75px;
   width: 250px;
   background-color: #383636;
   color: white;
@@ -279,11 +542,15 @@
 	vertical-align: middle;
 }
 
+#buy-deal-link {
+  text-decoration: none;
+  color: white;
+}
+
 #buy-deal-button:hover {
 	border-radius: 10px;
   padding: 10px;
   text-align: center;
-  margin-left: 75px;
   width: 250px;
   background-color: black;
   color: white;
@@ -296,14 +563,51 @@
 	vertical-align: middle;
 }
 
-#deal-price {
-	position: fixed;
-  right: 255px;
-  top: 119px;
-  background: black;
-  color: white;
-  height: 46px;
-  line-height: 47px;
+#back-to-deals-button {
+	border-radius: 10px;
   padding: 10px;
-  opacity: .5;
+  text-align: center;
+  width: 250px;
+  background-color: #383636;
+  color: white;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	box-shadow: none;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+#back-to-deals-link {
+  text-decoration: none;
+  color: white;
+}
+
+#back-to-deals-button:hover {
+	border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  background-color: black;
+  color: white;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	box-shadow: none;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+form {
+  width: 720px;
+  text-align: center;
+  position: fixed;
+  left: 366px;
+}
+
+iframe {
+  position: relative;
+  top: 178px;
 }
