@@ -35,4 +35,9 @@ $(function() {
 	// var collection = new App.Collections.Deals;
 	$('#main-view').append($('#sign-up-modal').html());
 	var loginModalView = new App.Views.LoginModalView();
+
+	// BV.getPlayer().pause();
+ //  var BV = new $.BigVideo();
+ //  BV.init();
+ //  BV.show('http://vjs.zencdn.net/v/oceans.mp4');
 });

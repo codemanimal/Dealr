@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       session[:current_user] = user.id
       redirect_to deals_path
     else
-      render :new
+      redirect_to sessions_new_path
     end
 
   end

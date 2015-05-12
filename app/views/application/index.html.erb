@@ -1,15 +1,37 @@
 <div id='login-container'>
 	<div id='main-view'>
-		<h2 class='tagline'>DEALS MADE EASY</h2>
-		<p>Sign up to shop.</p>
-		<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
-		<button id='signup-button' class='submit-button' type='submit'><%= link_to 'CONTINUE', new_user_path %></button>
-		<p id='terms-of-use'>By signing up, you agree to Dealr's <a href="http://www.google.com">Terms of Use</a></p>
+		<% if current_user %>
+		  <h1 class='signin-tagline' id='welcome-back-header'>
+		    Welcome back, <%= current_user.username %>
+		  </h1>
 
-		<div class='footer' id='sign-up-footer'>
-			<span>Already a member?</span>
-			<span class='sign-in-link'><%= link_to 'Sign In', sessions_new_path %></span>
-			<span class='wingdings'>4</span>
+		  <%= link_to 'LETS GO SHOPPING', deals_path, :class => 'submit-button', :id => 'session-deals-link' %>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/c5knoGOJ3e8?rel=0&autoplay=1" frameborder="0" allowfullscreen seamless></iframe>
+
+			<p style='position: relative; top: 195px'>Or just enjoy this awesome video</p>
+
+	  	<div class='footer'>
+				<span id='about' class='footer-button'>About</span>
+				<span class='footer-button'>
+					<a id='blog' href="http://thisisnthappiness.com/">Blog</a>
+				</span>
+				<span class='footer-button'>
+					<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
+				</span>
+			</div>
+	  <% else %>
+			<h2 class='tagline'>DEALS MADE EASY</h2>
+			<p>Sign up to shop.</p>
+			<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
+			<%= link_to 'CONTINUE', new_user_path, :id => 'signup-button' %>
+			<p id='terms-of-use'>By signing up, you agree to Dealr's <a href="http://www.google.com">Terms of Use</a></p>
+
+			<div class='footer' id='sign-up-footer'>
+				<span>Already a member?</span>
+				<span><%= link_to 'Sign In', sessions_new_path, :class => 'sign-in-link' %></span>
+				<span class='wingdings'>4</span>
+		<% end %>
 		</div>
 	</div>
 </div>

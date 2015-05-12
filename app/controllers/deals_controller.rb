@@ -4,6 +4,7 @@ class DealsController < ApplicationController
 
 	def index
 		@deals = Deal.all
+		# render json: @deals
 	end
 
 	def show

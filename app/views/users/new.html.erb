@@ -11,28 +11,28 @@
 		<input class='user-signup' name ='password' autocomplete='on' type="password" placeholder="Enter password" required>
 		<button id='start-shopping-button' class='submit-button' type='submit'>START SHOPPING</button> -->
 
-		<%= f.text_field :first_name %>
+		<%= f.text_field :first_name, placeholder: 'Enter first name', class: 'user-signup' %>
 		<br>
 
-		<%= f.text_field :last_name %>
+		<%= f.text_field :last_name, placeholder: 'Enter last name', class: 'user-signup' %>
 		<br>
 
-		<%= f.text_field :zipcode %>
+		<%= f.text_field :zipcode, placeholder: 'Enter zipcode', class: 'user-signup' %>
 		<br>
 
-		<%= f.text_field :username %>
+		<%= f.text_field :username, placeholder: 'Create a username', class: 'user-signup' %>
 		<br>
 
-		<%= f.password_field :password %>
+		<%= f.password_field :password, placeholder: 'Create a password', class: 'user-signup' %>
 		<br>
 
-		<%= f.submit 'START SHOPPING' %>
+		<%= f.submit 'START SHOPPING', class: 'submit-button' %>
 
 	<% end %>
 	
 	<div class='footer' id='sign-up-footer'>
 		<span>Already a member?</span>
-		<span class='sign-in-link'><%= link_to "Sign In", root_path %></span>
+		<span class='sign-in-link'><%= link_to "Sign In", sessions_new_path, :class => 'sign-in-link'%></span>
 		<span class='wingdings'>4</span>
 	</div>		
 
