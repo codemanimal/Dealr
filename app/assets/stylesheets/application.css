@@ -430,6 +430,46 @@
   font-family: 'Lombok', 'Arial', sans-serif;
 }
 
+#about:link {
+	text-decoration: none;
+	color: white;
+}
+
+#about:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#about:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#about:active {
+	text-decoration: none;
+	color: white;
+}
+
+#my-deals:link {
+	text-decoration: none;
+	color: white;
+}
+
+#my-deals:visited {
+	text-decoration: none;
+	color: white;
+}
+
+#my-deals:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#my-deals:active {
+	text-decoration: none;
+	color: white;
+}
+
 #back-to-deals {
 	width: 33%;
 	height: 42px;
@@ -445,6 +485,25 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	vertical-align: middle;
+	text-decoration: none;
+}
+
+#back-to-deals:hover {
+	width: 33%;
+	height: 42px;
+	padding: 8px;
+	font-family: 'Oswald ExtraLight', 'Arial', sans-serif;
+	margin: 10px 0;
+	box-shadow: none;
+	border: 1px solid #00FFCB;
+	background-color: #00FFCB;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-decoration: none;
 }
 
 #deal-description {
@@ -509,6 +568,7 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	vertical-align: middle;
+	text-decoration: none;
 }
 
 #save-deal-button:hover {
@@ -525,6 +585,7 @@
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	vertical-align: middle;
+	text-decoration: none;
 }
 
 #buy-deal-button {
