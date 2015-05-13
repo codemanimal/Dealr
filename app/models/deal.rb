@@ -9,7 +9,7 @@ class Deal < ActiveRecord::Base
 						uniqueness: { scope: :deal_id, message: "this deal already exists" }
 
 	def self.current_deal
-		self.find(params[:id])
+		self
 	end
 
 end

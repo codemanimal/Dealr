@@ -8,10 +8,10 @@
 <p id='deal-price'>$<%= @deal.deal_price %> (<%= @deal.savings_percent %>% off)</p>
 <span class='deal-buttons'>
 	<button id='save-deal-button'>
-		<%= link_to 'Save', add_deal_to_user_path(current_user), method: :put, :id => 'save-deal-button' %>
+		<%= link_to 'Save', deals_path, :id => 'save-deal-button' %>
 	</button>
 	<button id='buy-deal-button'>
-		<a id='buy-deal-link' href='<%= @deal.deal_url %>' target='_blank'>Buy</a>
+		<a id='buy-deal-link' href='<%= @deal.deal_url %>' target='_blank'>More Info</a>
 	</button>
 	<button id='back-to-deals-button'>
 		<%= link_to "Back", deals_path, :id => 'back-to-deals-link' %>

@@ -1,28 +1,7 @@
-== README
+Dealr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dealr is the first full rails app that I worked on for General Assembly's Web Development Immersive course. The purpose of Dealr is to use external datasources to build a database of deals in the New York City area and provide those deals to users in a simple user interface. Thus, Dealr is a discount, deals, and coupon aggregator that allows users view all deals in their local area as specified by a user's zipcode. 
 
-Things you may want to cover:
+I start out by seeding a database with the most popular deals for that day, as provided by 8coupons.com via their API. After a user has signed up and logged in to their account, I render all of the deals in the main deals view. A user can click on a deal to see more information, link to the deal's provider website, or save that deal to their account to view later. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Future updates will include search and filter functionality for deals as well as new data sources such as Sqoot and GroupOn. 

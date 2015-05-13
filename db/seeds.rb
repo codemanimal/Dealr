@@ -1,4 +1,5 @@
 User.destroy_all
+Deal.destroy_all
 
 usernames = %w(Test1 Test2 Test3)
 passwords  = ['asdf', 'asdfg', 'asdfgh']
@@ -15,3 +16,5 @@ usernames.each_with_index do |name, idx|
 		zipcode: zipcodes[idx],
 		})
 end
+
+Coupon.all
