@@ -13,7 +13,12 @@ class ApplicationController < ActionController::Base
                                              # no user is found
   end
 
+  # def current_deal
+  #   Deal.find(:id)
+  # end
+
   def authenticate
     redirect_to sessions_new_path unless current_user
   end
+
 end

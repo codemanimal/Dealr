@@ -1,5 +1,9 @@
+<h1 class='signin-tagline' id='welcome-back-header'>
+  Hey, <%= current_user.username %>
+</h1>
+
 <div id='deal-container'>
-	<% @deals.each do |deal| %>
+	<% @user.deals.each do |deal| %>
 		<div class='deal'>
 			<%= link_to deal.biz_name, deal_path(deal), :class => 'deal-biz-name' %>
 			<p id='deal-title'><%= link_to deal.deal_title, deal_path(deal) %></p>

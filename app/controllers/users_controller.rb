@@ -21,7 +21,32 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 	end
 
+	def add_deal
+		user = User.find(params[:id])
+		# NEED TO GET THE CURRENT DEAL - not same as user id
+		deal = Deal.find(@deal.id)
+
+		user.add_deal(deal)
+		
+		redirect_to deals_path
+	end
+	
+	def remove_deal
+		user = User.find(params[:id])
+		# deal = Deal.find(params[:deal_id])
+		deal = Deal.find(params[:id])
+
+		user.remove_deal(deal)
+
+		# check to see if you need this same as above
+		respond_to do |format|
+			format.html { redirect_to user_path(user) }
+			format.json { render json: @user }
+		end
+	end
+
 	private
+
 	def user_params
 		params.require(:user).permit(:first_name, :last_name, :zipcode, :username, :password)
 	end

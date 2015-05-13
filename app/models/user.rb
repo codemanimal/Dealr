@@ -10,4 +10,12 @@ class User < ActiveRecord::Base
 	validates :first_name, :last_name, :zipcode,
 						presence: true
 
+	def add_deal(deal)
+		self.deals.push(deal) unless self.deals.include? deal
+	end
+
+	def remove_deal(deal)
+		self.deals.destroy(deal) if self.deals.include? deal
+	end
+
 end

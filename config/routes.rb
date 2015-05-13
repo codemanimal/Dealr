@@ -7,4 +7,14 @@ Rails.application.routes.draw do
   get 'sessions/new' => 'sessions#new'
   post 'sessions' => 'sessions#create'
   delete 'sessions' => 'sessions#destroy'
+
+  get 'about' => 'about#index'
+
+  resources	:users do
+  	member do
+  		put 'add_deal', as: :add_deal_to
+  		put 'remove_deal', as: :remove_deal_from
+  	end
+  end
+  
 end

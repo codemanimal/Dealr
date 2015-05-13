@@ -11,10 +11,15 @@
 
 			<p style='position: relative; top: 195px'>Or just enjoy this awesome video</p>
 
-	  	<div class='footer'>
-				<span id='about' class='footer-button'>About</span>
+			<div class='footer'>
 				<span class='footer-button'>
-					<a id='blog' href="http://thisisnthappiness.com/">Blog</a>
+					<%= link_to 'My Deals', user_path(current_user), :id=>'my-deals' %>
+				</span>
+				<span class='footer-button'>
+					<%= link_to 'About', about_path, :id=>'about' %>
+				</span>
+				<span class='footer-button'>
+					<a id='blog' target='_blank' href="http://thisisnthappiness.com/">Blog</a>
 				</span>
 				<span class='footer-button'>
 					<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
@@ -25,7 +30,7 @@
 			<p>Sign up to shop.</p>
 			<input class='user-signup' name ='email' autocomplete='on' type="email" placeholder="Enter email address" required>
 			<%= link_to 'CONTINUE', new_user_path, :id => 'signup-button' %>
-			<p id='terms-of-use'>By signing up, you agree to Dealr's <a href="http://www.google.com">Terms of Use</a></p>
+			<p id='terms-of-use'>By signing up, you agree to Dealr's <a href="http://www.google.com" target='_blank'>Terms of Use</a></p>
 
 			<div class='footer' id='sign-up-footer'>
 				<span>Already a member?</span>
