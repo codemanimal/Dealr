@@ -1,5 +1,3 @@
-require 'pry'
-
 class UsersController < ApplicationController
 	def index
 		render json: User.all
@@ -25,13 +23,12 @@ class UsersController < ApplicationController
 
 	def add_deal
 		user = User.find(params[:id])
-		# deal = Deal.find(params[:deal_id])
-		deal = Deal.find(params[:id])
-		binding.pry
-		
+		# NEED TO GET THE CURRENT DEAL - not same as user id
+		deal = Deal.find(@deal.id)
+
 		user.add_deal(deal)
 		
-		redirect_to user_path(user)
+		redirect_to deals_path
 	end
 	
 	def remove_deal

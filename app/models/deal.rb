@@ -8,4 +8,8 @@ class Deal < ActiveRecord::Base
 	validates :deal_title,
 						uniqueness: { scope: :deal_id, message: "this deal already exists" }
 
+	def self.current_deal
+		self.find(params[:id])
+	end
+
 end
