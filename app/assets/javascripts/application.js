@@ -33,9 +33,11 @@ var App = {
 $(function() {
 	console.log('loaded bro');
 	// var collection = new App.Collections.Deals;
-	$('#main-view').append($('#sign-up-modal').html());
-	var loginModalView = new App.Views.LoginModalView();
+	// $('#main-view').append($('#sign-up-modal').html());
+	// var loginModalView = new App.Views.LoginModalView();
 
+	new App.Views.AboutView();
+	// $('#back-to-deals').on('click', console.log('deleting about'));
 	// BV.getPlayer().pause();
  //  var BV = new $.BigVideo();
  //  BV.init();

@@ -11,7 +11,7 @@
 		<span class='deal-buttons'>
 			<button id='save-deal-button'>Save</button>
 			<button id='buy-deal-button'>
-				<a id='buy-deal-link' href='<%= @deal.deal_url %>'>Buy</a>
+				<a id='buy-deal-link' href='<%= @deal.deal_url %>' target='_blank'>Buy</a>
 			</button>
 			<button id='back-to-deals-button'>
 				<%= link_to "Back", deals_path, :id => 'back-to-deals-link' %>
@@ -22,7 +22,7 @@
 		<div class='footer'>
 			<span id='about' class='footer-button'>About</span>
 			<span class='footer-button'>
-				<a id='blog' href="http://thisisnthappiness.com/">Blog</a>
+				<a id='blog' href="http://thisisnthappiness.com/" target='_blank'>Blog</a>
 			</span>
 			<span class='footer-button'>
 				<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>

@@ -413,13 +413,14 @@
 }
 
 #about-container {
+	text-align: center;
 	border: black;
   border-style: groove;
   border-radius: 20px;
   position: absolute;
   left: 205px;
   width: 1000px;
-  top: 90px;
+  top: 119px;
   padding: 10px;
   font-size: 14px;
   font-family: 'Pier Sans', 'Arial',  sans-serif;

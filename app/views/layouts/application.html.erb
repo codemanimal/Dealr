@@ -7,14 +7,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
-	<script src="//vjs.zencdn.net/4.12/video.js"></script>
 </head>
 <body>
 
 	<h2 id='logo'><%= link_to 'DEALR', root_path, :id => 'logo' %></h2>
 
-<!-- 	<template id='about-template'>
+	<template id='about-template'>
 		<div id='about-container'>
+			<h2 id='logo'><%= link_to 'DEALR', root_path, :id => 'logo' %></h2>
 			<h1>ABOUT</h1>
 			<hr>
 			<p>THE BEST LOCAL DEALS EVERYDAY. Dealr is your destination for the best discounts and offers in your local area. Each day, we curate deals with the best of the best in women's and men's fashion, home, travel, kids, and more. New deals are posted at 11AM ET and last for 24 hours.</p>
@@ -27,11 +27,21 @@
 			<p>Facebook: www.facebook.com/dealrapp</p>
 			<button id='back-to-deals'>Back to deals</button>			
 		</div>
+
+		<div class='footer'>
+			<span id='about' class='footer-button'>About</span>
+			<span class='footer-button'>
+				<a id='blog' href="http://thisisnthappiness.com/">Blog</a>
+			</span>
+			<span class='footer-button'>
+				<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
+			</span>
+		</div>
 	</template>
 
 	<template id='deal-saved-modal'>
 		<h1>Deal Saved!</h1>
-	</template> -->
+	</template>
 
 	<%= yield %>
 
