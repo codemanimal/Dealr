@@ -1,31 +1,29 @@
-	<!-- <div id='main-view'> -->
-		<span id='deal-description'>
-			<h3><%= @deal.biz_name %></h3>
-			<p><%= @deal.deal_desc %></p>
-		</span>
-		<span>
-			<img id='deal-description-image' src="<%= @deal.deal_image %>">
-		</span>
-		<p id='deal-price'>$<%=@deal.deal_price %> (<%= @deal.savings_percent%>% off)</p>
+	<span id='deal-description'>
+		<h3><%= @deal.biz_name %></h3>
+		<p><%= @deal.deal_desc %></p>
+	</span>
+	<span>
+		<img id='deal-description-image' src="<%= @deal.deal_image %>">
+	</span>
+	<p id='deal-price'>$<%=@deal.deal_price %> (<%= @deal.savings_percent%>% off)</p>
 
-		<span class='deal-buttons'>
-			<button id='save-deal-button'>Save</button>
-			<button id='buy-deal-button'>
-				<a id='buy-deal-link' href='<%= @deal.deal_url %>' target='_blank'>Buy</a>
-			</button>
-			<button id='back-to-deals-button'>
-				<%= link_to "Back", deals_path, :id => 'back-to-deals-link' %>
-			</button>
+	<span class='deal-buttons'>
+		<button id='save-deal-button'>Save</button>
+		<button id='buy-deal-button'>
+			<a id='buy-deal-link' href='<%= @deal.deal_url %>' target='_blank'>Buy</a>
+		</button>
+		<button id='back-to-deals-button'>
+			<%= link_to "Back", deals_path, :id => 'back-to-deals-link' %>
+		</button>
+	</span>
 
-		</span>
-
-		<div class='footer'>
-			<span id='about' class='footer-button'>About</span>
-			<span class='footer-button'>
-				<a id='blog' href="http://thisisnthappiness.com/" target='_blank'>Blog</a>
-			</span>
-			<span class='footer-button'>
-				<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
-			</span>
-		</div>
-	<!-- </div> -->
+<div class='footer'>
+	<span class='footer-button'>My Deals</span>
+	<span id='about' class='footer-button'>About</span>
+	<span class='footer-button'>
+		<a id='blog' target='_blank' href="http://thisisnthappiness.com/">Blog</a>
+	</span>
+	<span class='footer-button'>
+		<%= link_to 'Logout', sessions_path, method: :delete, :id => 'logout' %>
+	</span>
+</div>

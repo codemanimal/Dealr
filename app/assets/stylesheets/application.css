@@ -346,7 +346,7 @@
 }
 
 .footer-button{
-	margin: 83px;
+	margin: 88px;
 }
 
 #deal-container {
@@ -604,7 +604,7 @@
 form {
   width: 720px;
   text-align: center;
-  position: fixed;
+  position: relative;
   left: 366px;
 }
 
